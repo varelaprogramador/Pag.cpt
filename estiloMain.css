@@ -1,0 +1,315 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "Sora",Arial;
+    
+    
+}
+body{
+    
+    overflow-x: hidden;
+    background: #f3f0e9; background: -moz-linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%); background: -webkit-linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%); background: linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%);
+background-repeat: no-repeat;
+width: 100vw;
+}
+
+
+/* Scroll animation keyframes (adjusted from previous response) */
+#btn-scroll {
+    animation: slide-bottom 2s ease-in-out 0s infinite backwards; /* Adjust duration and easing */
+    margin-top: 15%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px); /* Reduce movement for subtler scroll cue */
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px); /* Reduce movement for subtler scroll cue */
+      transform: translateY(10px);
+    }
+  }
+  
+  /* Pulsating animation keyframes */
+  #btn-scroll {
+    animation: pulsate 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Adjust scale for pulsation intensity */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Adjust scale for pulsation intensity */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+#container-cpt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+   
+    align-items: center;
+}
+
+
+
+.logo{
+    width: 300px;
+    height: 200px;
+}
+
+#area-conteudo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: rgb(59, 59, 59);
+    gap: 10px;
+}
+#titulo-cpt{
+    text-align: center;
+    font-size: 40px;
+}
+#descricao-cpt{
+    font-size: 20px;
+    text-align: center;
+}
+.control-form{
+    display: flex;
+    flex-direction: column;
+}
+.input-email{
+    align-self: center;
+    width: 350px;
+    height: 40px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 15px 210px 15px 15px;
+    border-radius: 20px;
+    font-weight:600;
+    font-size: 15px;
+}
+.input-email:focus{
+  
+  border: 1px solid black;
+ 
+}
+.btn-form-cpt{
+    padding: 20px;
+    align-self: flex-end;
+    border: solid 1px;
+    border-radius: 17px;
+    margin-right: 10px;
+    margin-top: 6px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-form-cpt:hover{
+   border: solid 1px;
+   font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
+    
+}
+#info-cpt{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+#container-precos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  
+    padding-bottom: 240px;
+    margin-top: 250px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.863);
+    
+}
+.titulo-container{
+    margin-top: 150px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.sub-titulo{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.detalhe-texto{
+    margin-top: 15px;
+    width: 250px;
+    height: 2px;
+    border-radius: 25px;
+    background-color: #f3f0e9;
+}
+
+.container-cards{
+    margin-top: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 600px;
+    gap: 15px;
+}
+.card{
+  transition: 0.5s ease-in-out;
+    width:385px;
+    height: 475px;
+    padding: 45px 15px 15px 15px;
+    margin: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: #f3f0e9;
+}
+.card:hover{
+  transition: 0.5s ease-in-out;
+  scale: 1.1;
+  border: 1px solid black;
+ 
+}
+.card h1{
+ 
+  font-size: 45px;
+  color: rgb(37, 37, 37);
+}
+.preco-plano{
+  font-size: 35px;
+  color: rgb(15, 32, 78);
+}
+.detalhe-preco{
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.list-icons-plano{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 40px;
+  align-self: center;
+  font-size: 25px;
+}
+.btn-plano{
+  background-color: black;
+  border: solid 1px black;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: white;
+}
+.btn-plano:hover{
+  background-color: rgb(255, 255, 255);
+  
+  border: solid 1px black;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+footer{
+    padding: 15px;
+    width: 100vw;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    border-top:solid 3px rgb(24, 23, 23) ;
+    background-color: rgb(54, 54, 54);
+
+}
+
+footer p {
+  font-family: "Lora";
+  
+}
+.logo-footer{
+    width: 200px;
+ 
+    height: 150px;
+}
+.descricao-site{
+  width: 300px;
+  text-align: center;
+  color: rgb(211, 211, 211);
+}
+.box-foooter{
+  display: flex;
+  flex-flow: column wrap;
+  
+  text-align: center;
+  max-width: 500px;
+  color:rgb(211, 211, 211);
+}
+.logo-social{
+  max-width: 30px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 5px 15px 0px 0px;
+}
+.logo-social:hover{
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rebeccapurple;
+}
+#tag-destaque{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  border: solid 1px white;
+  color: white;
+  border-radius: 25px;
+  align-self: center;
+  margin-top: -70px;
+}

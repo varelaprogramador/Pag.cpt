@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="StyleSheet" href="estiloMain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="container-cpt">
+        <article class="area-img">
+            <img class="logo"  src="assets/logo-fincontrol-black.svg">
+        </article>
+        
+        <article id="area-conteudo">
+            <h1 id="titulo-cpt">Tire seu <span >negócio</span> do sufoco apartir<br> de 120$/mês </h1>
+            <p id="descricao-cpt">Expanda seu negocio com um controle financeiro diferenciado.<br> Começe agora por apenas 120$</p>
+
+            <form class="control-form">
+                <input class="input-email" type="email" placeholder="Digite seu melhor e-mail aqui...">
+                <button class="btn-form-cpt" type="submit">Começe o teste grátis</button>
+
+            </form>
+            <p id="info-cpt">Você terá apenas 3 dias para testar o sistema Fincontrol</p>
+           
+        </article>
+        <div id="area-scroll">
+        <img id="btn-scroll"  src="assets/seta-btn.svg">
+    </div>
+    </section>
+
+    <section id="container-precos">
+    <div>
+        <h1 class="titulo-container">Conheça nossos planos</h1>
+        <p class="sub-titulo">planos montados visando o melhor pra Você</p>
+        <span class="detalhe-texto"></span>
+    </div>
+    <div class="container-cards">
+        <article class="card">
+            <header>
+                <h1>Básico</h1>
+                <h2 class="preco-plano">
+                    R$150<span class="detalhe-preco">/mês</span>
+
+                </h2>
+            </header>
+            
+
+            <ul class="list-icons-plano" style="align-self: flex-start;">
+                <li style="list-style-image: url(assets/grafico-caixa.svg);">
+                   
+                    <p>Template padrão</p>
+                </li>
+                <li style="list-style-image: url(assets/duvida.svg);">
+                    <p>Suporte limitado</p>
+                </li>
+                <li style="list-style-image: url(assets/grafico-linha.svg);">
+                    <p>Contador á parte</p>
+                </li>
+
+            </ul>
+                <button class="btn-plano"> Quero adquirir este plano</button>
+         
+
+        </article>
+        <article class="card">
+            <span id="tag-destaque">Mais popular</span>
+            <header>
+                <h1>Padrão</h1>
+                <h2 class="preco-plano">
+                    R$200<span class="detalhe-preco">/mês</span>
+
+                </h2>
+            </header>
+            
+
+            <ul class="list-icons-plano">
+              
+                  <li style="list-style-image: url(assets/grafico-caixa.svg);">
+                    <p>Template personalizado</p>
+                  </li>
+                
+                <li style="list-style-image: url(assets/duvida.svg);">
+                    <p>Suporte ilimitado</p>
+                </li>
+                <li style="list-style-image: url(assets/grafico-linha.svg);">
+                    <p>Contador para suas consultas simples</p>
+                </li>
+            
+
+            </ul>
+                <button class="btn-plano"> Quero adquirir este plano</button>
+
+        </article>
+
+        <article class="card">
+            <header>
+                <h1>Premium</h1>
+                <h2 class="preco-plano">
+                    R$450<span class="detalhe-preco">/mês</span>
+
+                </h2>
+            </header>
+            
+
+            <ul class="list-icons-plano">
+              
+                  <li style="list-style-image: url(assets/grafico-caixa.svg);">
+                    <p>Template personalizado</p>
+                  </li>
+                
+                <li style="list-style-image: url(assets/duvida.svg);">
+                    <p>Suporte ilimitado</p>
+                </li>
+                <li style="list-style-image: url(assets/grafico-linha.svg);">
+                    <p>Um contador exclusivo para você</p>
+                </li>
+            
+
+            </ul>
+                <button class="btn-plano"> Quero adquirir este plano</button>
+
+        </article>
+    </div>
+    </section>
+
+
+
+    <script>
+        document.getElementById("btn-scroll").addEventListener("click", function() {
+      document.getElementById("container-precos").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+    </script>
+    
+</body>
+<footer >
+    <article class="box-foooter">
+        <img class="logo-footer" src="assets/logo-fincontrol.svg">
+        
+    </article>
+    <article class="box-foooter">
+        <p class="descricao-site">Esta é apenas uma página de estudos<br> criada por Ryan Varela.</p>
+        
+
+    </article>
+    <article class="box-foooter">
+        <p style="font-weight: 800;">
+        Ficou interessado no meu trabalho?
+        </p>
+        <p>Entre em contato comigo:</p>
+        <ul>
+            <img class="logo-social" src="assets/logo-github-icons.png">
+            <img class="logo-social" src="assets/logo-mail-icons.png">
+
+        </ul>
+    </article>
+</footer>
+
+
+</html>
