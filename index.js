@@ -1,6 +1,7 @@
 let isValidatyEmail=false;
 const infoForm=document.getElementById("info-form");
 const inputEmail=document.getElementById("input-email");
+
 /*scroll proxima seçao*/
 document.getElementById("btn-scroll").addEventListener("click", function() {
     document.getElementById("container-precos").scrollIntoView({
