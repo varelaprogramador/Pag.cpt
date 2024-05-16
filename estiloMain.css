@@ -6,11 +6,9 @@
     
 }
 body{
-    
-    overflow-x: hidden;
-    background: #f3f0e9; background: -moz-linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%); background: -webkit-linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%); background: linear-gradient(45deg,  #f3f0e9 0%,#b3afaa 100%);
-background-repeat: no-repeat;
-width: 100vw;
+overflow-x: hidden;
+background-color: rgb(199, 199, 199);
+
 }
 
 
@@ -151,6 +149,7 @@ width: 100vw;
 #info-cpt{
     font-size: 15px;
     font-weight: 600;
+    text-align: center;
 }
 
 
@@ -162,7 +161,7 @@ width: 100vw;
   
     padding-bottom: 240px;
     margin-top: 250px;
-    width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.863);
     
@@ -179,13 +178,7 @@ width: 100vw;
     color: rgb(255, 255, 255);
     text-align: center;
 }
-.detalhe-texto{
-    margin-top: 15px;
-    width: 250px;
-    height: 2px;
-    border-radius: 25px;
-    background-color: #f3f0e9;
-}
+
 
 .container-cards{
     margin-top: 120px;
@@ -312,4 +305,98 @@ footer p {
   border-radius: 25px;
   align-self: center;
   margin-top: -70px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+
+  #area-conteudo{
+    width: 100vw;
+    height: 50vh;
+}
+#titulo-cpt{
+    text-align: center;
+    font-size: 1.8rem;
+}
+#descricao-cpt{
+    font-size: 1rem;
+    width: 350px;
+    font-weight: 400;
+  
+}
+
+.input-email{
+    width: 160px;
+    height: 40px;
+    align-self: center;
+    padding: 15px 195px 15px 15px;
+    
+}
+
+.btn-form-cpt{
+    padding: 15px;
+
+  
+    border-radius: 13px;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+#info-cpt{
+  width: 300px;
+  
+}
+#btn-scroll {
+  width: 30px;
+}
+
+
+/* container 2-->*/
+
+#container-precos{
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+ 
+  
+}
+.card{
+  width:300px;
+  height: 390px;
+  
+
+}
+.titulo-container{
+
+  font-size: 30px;
+ 
+}
+.sub-titulo{
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.card h1{
+ 
+  font-size: 30px;
+}
+.preco-plano{
+  font-size: 25px;
+  
+}
+.detalhe-preco{
+  font-size: 30px;
+  font-weight: 500;
+ 
+}
+.list-icons-plano{
+  gap: 20px;
+  padding: 30px;
+  font-size: 18px;
+}
+
+  
 }
